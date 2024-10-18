@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  height: 42px;
+}
+
+.container {
+  padding: 15px;
+}
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  padding: 10px 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu a:hover {
+  color: #007bff;
+  font-weight: bold;
+}
