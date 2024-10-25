@@ -1,0 +1,14 @@
+{
+    "akun": [
+        {
+            "username": "admin1",
+            "password": "passAdmin",
+            "role": "admin"
+        },
+        {
+            "username": "guru1",
+            "password": "passGuru",
+            "role": "guru"
+        }
+    ]
+}
