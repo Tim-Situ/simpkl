@@ -5,103 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRAKERAN</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <!-- sidebar -->
     <aside>
-        <div class="logo">
-            <img src="/assets/images/simpkl-logo.png" alt="Logo SIMPKL" />
-        </div>
+        <div class="content">
+            <span class="close-menu">&times;</span>
+            <div class="logo">
+                <img src="/assets/images/simpkl-logo.png" alt="Logo SIMPKL" />
+            </div>
 
-        <!-- Menu Sidebar -->
-        <nav>
-            <ul class="menu">
-                <a href="./index.html">
+            <!-- Menu Sidebar -->
+            <nav>
+                <ul class="menu">
+                    <a href="./index.html">
+                        <li>
+                            <img src="/assets/svg/home.svg" alt="Dashboard" />
+                            <span class="active">Dashboard</span>
+                        </li>
+                    </a>
+                    <hr />
                     <li>
-                        <img src="/assets/svg/home.svg" alt="Dashboard" />
-                        <span class="active">Dashboard</span>
+                        <span>Admin Sekolah</span>
                     </li>
-                </a>
-                <hr />
-                <li>
-                    <span>Admin Sekolah</span>
-                </li>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Pengaturan" />
-                        <span>Pengaturan</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Kelola Jurusan" />
-                        <span>Kelola Jurusan</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Data Perusahaan" />
-                        <span>Data Perusahaan</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Data Pembimbing" />
-                        <span>Data Pembimbing</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Data Siswa" />
-                        <span>Data Siswa</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Kelompok Bimbingan" />
-                        <span class="active">Kelompok Bimbingan</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Penilaian" />
-                        <span>Penilaian</span>
-                    </li>
-                </a>
-            </ul>
-        </nav>
-        <!-- end menu-sidebar -->
+                    <a href="#">
+                        <li>
+                            <img src="/assets/svg/home.svg" alt="Pengaturan" />
+                            <span>Pengaturan</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="/assets/svg/home.svg" alt="Kelola Jurusan" />
+                            <span>Kelola Jurusan</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="/assets/svg/home.svg" alt="Data Perusahaan" />
+                            <span>Data Perusahaan</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="/assets/svg/home.svg" alt="Data Pembimbing" />
+                            <span>Data Pembimbing</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="/assets/svg/home.svg" alt="Data Siswa" />
+                            <span>Data Siswa</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="/assets/svg/home.svg" alt="Kelompok Bimbingan" />
+                            <span class="active">Kelompok Bimbingan</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="/assets/svg/home.svg" alt="Penilaian" />
+                            <span>Penilaian</span>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <!-- end menu-sidebar -->
+        </div>
     </aside>
     <!-- end sidebar -->
 
     <!-- Main -->
     <main>
         <!-- header -->
-        <header class="header">
-            <div class="user">
-                <button class="btn-none">
-                    <img
-                        class="darkmode-toggle"
-                        src="/assets/svg/ic-dark_mode.svg"
-                        alt="Toggle dark mode"
-                    />
-                </button>
-                <button class="btn-none">
-                    <img
-                        class="profile-pict"
-                        src="/assets/images/profile-pict.png"
-                        alt="Avatar User"
-                    />
-                    <span class="profile-name">Fauzein Mulya Warman</span>
-                    <img
-                        class="dropdown-icon"
-                        src="/assets/svg/ic-dropdown.svg"
-                        alt="Profile menu"
-                    />
-                </button>
+        <header>
+            <div class="menu-toggle">
+              <img
+                class="nav-menu"
+                src="/assets/svg/ic-bar.svg"
+                alt="Menu toggle"
+              />
             </div>
-        </header>
+            <div class="user">
+              <button class="btn-none">
+                <img
+                  class="darkmode-toggle"
+                  src="/assets/svg/ic-dark_mode.svg"
+                  alt="Toggle dark mode"
+                />
+              </button>
+              <button class="btn-none">
+                <img
+                  class="profile-pict"
+                  src="/assets/images/profile-pict.png"
+                  alt="Avatar User"
+                />
+                <span class="profile-name">Muhammad Haulul Azkiyaa</span>
+                <img
+                  class="dropdown-icon"
+                  src="/assets/svg/ic-dropdown.svg"
+                  alt="Profile menu"
+                />
+              </button>
+            </div>
+          </header>
 
         <section class="content">
             <h1>Kelompok Bimbingan</h1>
@@ -148,6 +158,7 @@
         <footer><p>Copyright 2024</p></footer>
     </main>
 
+
     <!-- Form Slide-In -->
     <div id="formInput" class="form-sidebar">
         <div class="form-content">
@@ -175,6 +186,7 @@
         </div>
     </div>
 
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/js/kelompok-bimbingan.js"></script>
 </body>
 </html>

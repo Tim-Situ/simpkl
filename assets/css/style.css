@@ -19,7 +19,6 @@ aside {
   width: 300px;
   border-right: 1px solid #dddddd;
   min-height: 100vh;
-  padding: 25px;
 }
 
 .logo img {
@@ -63,7 +62,7 @@ main {
   flex: 1;
 }
 
-.header {
+header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -71,7 +70,7 @@ main {
   border-bottom: 1px solid #ddd;
 }
 
-.header .user {
+header .user {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +85,8 @@ main {
   justify-content: center;
 }
 
-.darkmode-toggle {
+.darkmode-toggle,
+.nav-menu {
   width: 24px;
 }
 
@@ -157,6 +157,7 @@ table {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  overflow: auto;
 }
 
 th {
@@ -327,6 +328,7 @@ select {
 
 .modal-content {
   padding: 20px;
+  overflow-x: auto;
 }
 
 .modal table {
@@ -339,4 +341,65 @@ select {
   padding: 20px;
   border-top: 1px solid #eeeeee;
   gap: 10px;
+}
+
+.menu-toggle,
+.close-menu {
+  display: none;
+}
+
+aside .close-menu {
+  position: absolute;
+  right: 5%;
+}
+
+body.dark-mode,
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode aside,
+body.dark-mode table,
+body.dark-mode .modal-card,
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #111827;
+}
+
+body.dark-mode h1,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode,
+body.dark-mode .modal-card,
+body.dark-mode table,
+body.dark-mode input,
+body.dark-mode textarea {
+  color: #ffffff;
+}
+
+@media (max-width: 980px) {
+  aside {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #fff;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  aside.open {
+    left: 0;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .menu-toggle,
+  .close-menu {
+    display: block;
+  }
+
+  .modal-card {
+    width: 90%;
+  }
 }
