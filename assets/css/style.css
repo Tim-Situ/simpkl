@@ -195,7 +195,7 @@ td {
 }
 
 .btn-blue {
-  background-color: #2C55D3;
+  background-color: #2c55d3;
   color: white;
 }
 
@@ -205,7 +205,7 @@ td {
 }
 
 .btn-red {
-  background-color: #BE2A1E;
+  background-color: #be2a1e;
 }
 
 .btn.primary {
@@ -282,20 +282,14 @@ label {
   margin: 10px 0 5px;
 }
 
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
 .width-100 {
   width: 100%;
 }
 
 .btn-white {
   background-color: white;
-  color: #2C55D3;
-  border: 1px solid #2C55D3;
+  color: #2c55d3;
+  border: 1px solid #2c55d3;
 }
 
 .modal {
