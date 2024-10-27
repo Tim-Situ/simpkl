@@ -72,7 +72,7 @@ $(document).ready(function() {
         let dashboardUrl;
         switch(role.toLowerCase()) {
             case 'admin':
-                dashboardUrl = '/index.html';
+                dashboardUrl = '/admin/index.html';
                 break;
             case 'guru':
                 dashboardUrl = '/pembimbing/index.html';
