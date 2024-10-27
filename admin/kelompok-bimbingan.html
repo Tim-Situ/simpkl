@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRAKERAN</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- sidebar -->
+    <aside>
+        <div class="logo">
+            <img src="/assets/images/simpkl-logo.png" alt="Logo SIMPKL" />
+        </div>
+
+        <!-- Menu Sidebar -->
+        <nav>
+            <ul class="menu">
+                <a href="./index.html">
+                    <li>
+                        <img src="/assets/svg/home.svg" alt="Dashboard" />
+                        <span class="active">Dashboard</span>
+                    </li>
+                </a>
+                <hr />
+                <li>
+                    <span>Admin Sekolah</span>
+                </li>
+                <a href="#">
+                    <li>
+                        <img src="/assets/svg/home.svg" alt="Pengaturan" />
+                        <span>Pengaturan</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="/assets/svg/home.svg" alt="Kelola Jurusan" />
+                        <span>Kelola Jurusan</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="/assets/svg/home.svg" alt="Data Perusahaan" />
+                        <span>Data Perusahaan</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="/assets/svg/home.svg" alt="Data Pembimbing" />
+                        <span>Data Pembimbing</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="/assets/svg/home.svg" alt="Data Siswa" />
+                        <span>Data Siswa</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="/assets/svg/home.svg" alt="Kelompok Bimbingan" />
+                        <span>Kelompok Bimbingan</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="/assets/svg/home.svg" alt="Penilaian" />
+                        <span>Penilaian</span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <!-- end menu-sidebar -->
+    </aside>
+    <!-- end sidebar -->
+
+    <!-- Main -->
+    <main>
+        <!-- header -->
+        <header class="header">
+            <div class="user">
+                <button class="btn-none">
+                    <img
+                        class="darkmode-toggle"
+                        src="/assets/svg/ic-dark_mode.svg"
+                        alt="Toggle dark mode"
+                    />
+                </button>
+                <button class="btn-none">
+                    <img
+                        class="profile-pict"
+                        src="/assets/images/profile-pict.png"
+                        alt="Avatar User"
+                    />
+                    <span class="profile-name">Fauzein Mulya Warman</span>
+                    <img
+                        class="dropdown-icon"
+                        src="/assets/svg/ic-dropdown.svg"
+                        alt="Profile menu"
+                    />
+                </button>
+            </div>
+        </header>
+
+        <section class="content">
+            <h1>Kelompok Bimbingan</h1>
+            <p>
+                Anda dapat melihat data Kelompok Bimbingan berdasarkan tahun ajaran yang sedang aktif, menambahkan, mengubah data dan status aktif, serta menghapus data Kelompok Bimbingan.
+            </p>
+            <button id="openFormButton" class="btn btn-blue">+ Tambah</button>
+            <table>
+                <thead>
+                    <tr>
+                    <th>No</th>
+                    <th>NIS / NISN</th>
+                    <th>Nama Siswa</th>
+                    <th>Guru Pembimbing</th>
+                    <th>Perusahaan</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1302223127 / 123342234</td>
+                        <td>Fauzein Mulya Warman</td>
+                        <td>Villy</td>
+                        <td>Direktorat PuTI Tel-U</td>
+                        <td>Nonaktif</td>
+                        <td>
+                            <button class="btn btn-blue">
+                                <img src="/assets/svg/ic-edit.svg" alt="Aktif / Non-Aktifkan" />
+                            </button>
+                            <button class="btn btn-orange">
+                                <img src="/assets/svg/ic-edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-red">
+                                <img src="/assets/svg/ic-edit.svg" alt="Hapus" />
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer><p>Copyright 2024</p></footer>
+    </main>
+
+    <!-- Form Slide-In -->
+    <div id="formContainer" class="form-container">
+        <div class="form-content">
+          <h2>Tambah Kelompok Bimbingan</h2>
+          <label for="siswa">Pilih Siswa</label>
+          <select id="siswa">
+            <option value="">Select...</option>
+            <!-- Options siswa -->
+          </select>
+  
+          <label for="pembimbing">Pilih Pembimbing</label>
+          <select id="pembimbing">
+            <option value="">Select...</option>
+            <!-- Options pembimbing -->
+          </select>
+  
+          <label for="perusahaan">Pilih Perusahaan</label>
+          <select id="perusahaan">
+            <option value="">Select...</option>
+            <!-- Options perusahaan -->
+          </select>
+  
+          <button class="btn btn-blue width-100">Tambahkan</button>
+          <button id="closeFormButton" class="btn btn-white width-100">Tutup</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/kelompok-bimbingan.js"></script>
+</body>
+</html>

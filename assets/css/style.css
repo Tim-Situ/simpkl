@@ -179,6 +179,7 @@ td {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .btn.lihat {
@@ -188,6 +189,21 @@ td {
 
 .btn.edit {
   background-color: #dc9f39;
+  color: white;
+}
+
+.btn-blue {
+  background-color: #2C55D3;
+  color: white;
+}
+
+.btn-orange {
+  background-color: #dc9f39;
+  color: white;
+}
+
+.btn-red {
+  background-color: #BE2A1E;
   color: white;
 }
 
@@ -218,4 +234,45 @@ footer {
   padding: 10px;
   background-color: #fff;
   width: 100%;
+}
+
+.form-container {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  padding: 20px;
+}
+
+.form-container.active {
+  right: 0;
+}
+
+.form-content h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.btn-white {
+  background-color: white;
+  color: #2C55D3;
+  border: 1px solid #2C55D3;
 }
