@@ -72,13 +72,11 @@ $(document).ready(function() {
         let dashboardUrl;
         switch(role.toLowerCase()) {
             case 'admin':
-                dashboardUrl = '/pembimbing/penilaian-akhir.html';
+                dashboardUrl = '/index.html';
                 break;
             case 'guru':
-                dashboardUrl = '/guru/dashboard.html';
+                dashboardUrl = '/pembimbing/index.html';
                 break;
-            default:
-                dashboardUrl = '/dashboard.html';
         }
         window.location.href = dashboardUrl;
     }
