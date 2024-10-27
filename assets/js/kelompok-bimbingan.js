@@ -1,14 +1,23 @@
-// Ambil elemen tombol dan form
-const openFormButton = document.getElementById('openFormButton');
+const formInput = document.getElementById('formInput');
+const formTitle = document.getElementById('formTitle');
+const addButton = document.getElementById('addButton');
+const editButton = document.getElementById('editButton');
 const closeFormButton = document.getElementById('closeFormButton');
-const formContainer = document.getElementById('formContainer');
 
-// Tambahkan event listener untuk membuka form
-openFormButton.addEventListener('click', () => {
-    formContainer.classList.add('active');
+// Event listener for Add button
+addButton.addEventListener('click', () => {
+    formTitle.textContent = 'Tambah Kelompok Bimbingan';
+    formInput.classList.add('show');
+    console.log("Tes")
 });
 
-// Tambahkan event listener untuk menutup form
+// Event listener for Edit button
+editButton.addEventListener('click', () => {
+    formTitle.textContent = 'Edit Kelompok Bimbingan';
+    formInput.classList.add('show');
+});
+
+// Event listener for Close button
 closeFormButton.addEventListener('click', () => {
-    formContainer.classList.remove('active');
+    formInput.classList.remove('show');
 });

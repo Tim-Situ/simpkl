@@ -60,7 +60,7 @@
                 <a href="#">
                     <li>
                         <img src="/assets/svg/home.svg" alt="Kelompok Bimbingan" />
-                        <span>Kelompok Bimbingan</span>
+                        <span class="active">Kelompok Bimbingan</span>
                     </li>
                 </a>
                 <a href="#">
@@ -108,7 +108,7 @@
             <p>
                 Anda dapat melihat data Kelompok Bimbingan berdasarkan tahun ajaran yang sedang aktif, menambahkan, mengubah data dan status aktif, serta menghapus data Kelompok Bimbingan.
             </p>
-            <button id="openFormButton" class="btn btn-blue">+ Tambah</button>
+            <button id="addButton" class="btn btn-blue">+ Tambah</button>
             <table>
                 <thead>
                     <tr>
@@ -133,7 +133,7 @@
                             <button class="btn btn-blue">
                                 <img src="/assets/svg/ic-edit.svg" alt="Aktif / Non-Aktifkan" />
                             </button>
-                            <button class="btn btn-orange">
+                            <button id="editButton" class="btn btn-orange">
                                 <img src="/assets/svg/ic-edit.svg" alt="Edit" />
                             </button>
                             <button class="btn btn-red">
@@ -149,31 +149,30 @@
     </main>
 
     <!-- Form Slide-In -->
-    <div id="formContainer" class="form-container">
+    <div id="formInput" class="form-sidebar">
         <div class="form-content">
-          <h2>Tambah Kelompok Bimbingan</h2>
-          <label for="siswa">Pilih Siswa</label>
-          <select id="siswa">
-            <option value="">Select...</option>
-            <!-- Options siswa -->
-          </select>
-  
-          <label for="pembimbing">Pilih Pembimbing</label>
-          <select id="pembimbing">
-            <option value="">Select...</option>
-            <!-- Options pembimbing -->
-          </select>
-  
-          <label for="perusahaan">Pilih Perusahaan</label>
-          <select id="perusahaan">
-            <option value="">Select...</option>
-            <!-- Options perusahaan -->
-          </select>
-  
-          <button class="btn btn-blue width-100">Tambahkan</button>
-          <button id="closeFormButton" class="btn btn-white width-100">Tutup</button>
+            <h2 id="formTitle">Form Kelompok Bimbingan</h2>
+            <label for="siswa">Pilih Siswa</label>
+            <select id="siswa">
+                <option value="">Select...</option>
+                <!-- Options siswa -->
+            </select>
+
+            <label for="pembimbing">Pilih Pembimbing</label>
+            <select id="pembimbing">
+                <option value="">Select...</option>
+                <!-- Options pembimbing -->
+            </select>
+
+            <label for="perusahaan">Pilih Perusahaan</label>
+            <select id="perusahaan">
+                <option value="">Select...</option>
+                <!-- Options perusahaan -->
+            </select>
+
+            <button class="btn btn-blue width-100">Tambahkan</button>
+            <button id="closeFormButton" class="btn btn-white width-100">Tutup</button>
         </div>
-      </div>
     </div>
 
     <script src="../assets/js/kelompok-bimbingan.js"></script>
