@@ -274,5 +274,6 @@ footer {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+  border-top: 1px solid #eeeeee;
   gap: 10px;
 }
