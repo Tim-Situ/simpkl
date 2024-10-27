@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh; /* Menggunakan vh untuk memastikan tinggi sesuai viewport */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Mencegah scrolling */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Menggunakan vh untuk memastikan tinggi sesuai viewport */
+    width: 100%;
+    position: fixed; /* Memastikan container tetap di posisinya */
+}
+
+.image-section {
+    flex: 3.25;
+    position: relative; /* Menambahkan posisi relative */
+    overflow: hidden; /* Mencegah gambar overflow */
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Memastikan gambar mengisi seluruh area */
+    top: 0;
+    left: 0;
+}
+
+.login-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+    position: relative; /* Menambahkan posisi relative */
+    height: 100%; /* Mengisi tinggi penuh */
+    overflow-y: auto; /* Memungkinkan scroll hanya pada bagian login jika diperlukan */
+}
+
+.login-content {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Sisanya tetap sama seperti sebelumnya */
+.logo img {
+    max-width: 120px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+h2 {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2F8FED;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute; /* Mengubah menjadi absolute */
+    bottom: 10px; /* Posisi dari bawah */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #999;
+    padding-bottom: 10px;
+}
+
+footer img {
+    max-width: 120px;
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ======================================================================================================================== */
+/* ======================================================================================================================== */
+/* ======================================================================================================================== */
+/* ======================================================================================================================== */
+/* ======================================================================================================================== */
+
+
+/* Input styling */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-group input.error {
+    border-color: #dc3545;
+}
+
+/* Error message styling */
+.error-text {
+    display: none;
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+/* Shake animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* Success screen styling */
+.login-success {
+    text-align: center;
+    padding: 30px;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    margin: 0 auto 20px;
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.role-badge.admin {
+    background-color: #007bff;
+    color: white;
+}
+
+.role-badge.guru {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Loading bar */
+.loading-bar {
+    width: 100%;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.loading-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: #007bff;
+    animation: loading 1.5s infinite ease-in-out;
+}
+
+@keyframes loading {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.redirect-text {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Focus styles */
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.2);
+    outline: none;
+}
+
+/* Hover effects */
+.login-btn:hover {
+    background-color: #0056b3;
+}
