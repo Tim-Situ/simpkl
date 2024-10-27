@@ -1,0 +1,27 @@
+{
+    "dataKehadiran": [
+      {
+        "no": 1,
+        "nis_nisn": "12345678",
+        "nama": "Nama Siswa 1",
+        "kehadiran": {
+          "hadir": false,
+          "izin": true,
+          "sakit": false,
+          "alfa": false
+        }
+      },
+      {
+        "no": 2,
+        "nis_nisn": "87654321",
+        "nama": "Nama Siswa 2",
+        "kehadiran": {
+          "hadir": false,
+          "izin": false,
+          "sakit": false,
+          "alfa": false
+        }
+      }
+    ]
+  }
+  

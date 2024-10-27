@@ -5,80 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRAKERAN</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <!-- Include DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
     <!-- sidebar -->
     <aside>
-        <div class="logo">
-            <img src="/assets/images/simpkl-logo.png" alt="Logo SIMPKL" />
-        </div>
+        <div class="content">
+            <span class="close-menu">&times;</span>
+            <div class="logo">
+                <img src="/assets/images/simpkl-logo.png" alt="Logo SIMPKL" />
+            </div>
 
-        <!-- Menu Sidebar -->
-        <nav>
-            <ul class="menu">
-                <a href="./index.html">
+            <!-- Menu Sidebar -->
+            <nav>
+                <ul class="menu">
+                    <a href="./index.html">
+                        <li>
+                            <img src="/assets/svg/ic-home.svg" alt="Dashboard" />
+                            <span>Dashboard</span>
+                        </li>
+                    </a>
+                    <hr />
                     <li>
-                        <img src="/assets/svg/home.svg" alt="Dashboard" />
-                        <span class="active">Dashboard</span>
+                        <span>Admin Sekolah</span>
                     </li>
-                </a>
-                <hr />
-                <li>
-                    <span>Admin Sekolah</span>
-                </li>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Pengaturan" />
-                        <span>Pengaturan</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Kelola Jurusan" />
-                        <span>Kelola Jurusan</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Data Perusahaan" />
-                        <span>Data Perusahaan</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Data Pembimbing" />
-                        <span>Data Pembimbing</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Data Siswa" />
-                        <span>Data Siswa</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Kelompok Bimbingan" />
-                        <span>Kelompok Bimbingan</span>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="/assets/svg/home.svg" alt="Penilaian" />
-                        <span>Penilaian</span>
-                    </li>
-                </a>
-            </ul>
-        </nav>
-        <!-- end menu-sidebar -->
+                    <a href="#">
+                        <li>
+                            <img src="../assets/svg/ic-setting.svg" alt="Pengaturan" />
+                            <span>Pengaturan</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="../assets/svg/ic-jurusan.svg" alt="Kelola Jurusan" />
+                            <span>Kelola Jurusan</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="../assets/svg/ic-perusahaan.svg" alt="Data Perusahaan" />
+                            <span>Data Perusahaan</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="../assets/svg/ic-pembimbing.svg" alt="Data Pembimbing" />
+                            <span>Data Pembimbing</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="../assets/svg/ic-siswa.svg" alt="Data Siswa" />
+                            <span>Data Siswa</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="../assets/svg/ic-kelompok-bimbingan-active.svg" alt="Kelompok Bimbingan" />
+                            <span class="active">Kelompok Bimbingan</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="../assets/svg/final-grade.svg" alt="Penilaian" />
+                            <span>Penilaian</span>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <!-- end menu-sidebar -->
+        </div>
     </aside>
     <!-- end sidebar -->
 
     <!-- Main -->
     <main>
         <!-- header -->
-        <header class="header">
+        <header>
+            <div class="menu-toggle">
+                <img
+                    class="nav-menu"
+                    src="/assets/svg/ic-bar.svg"
+                    alt="Menu toggle"
+                />
+            </div>
             <div class="user">
                 <button class="btn-none">
                     <img
@@ -93,7 +111,7 @@
                         src="/assets/images/profile-pict.png"
                         alt="Avatar User"
                     />
-                    <span class="profile-name">Fauzein Mulya Warman</span>
+                    <span class="profile-name">Muhammad Haulul Azkiyaa</span>
                     <img
                         class="dropdown-icon"
                         src="/assets/svg/ic-dropdown.svg"
@@ -108,8 +126,8 @@
             <p>
                 Anda dapat melihat data Kelompok Bimbingan berdasarkan tahun ajaran yang sedang aktif, menambahkan, mengubah data dan status aktif, serta menghapus data Kelompok Bimbingan.
             </p>
-            <button id="openFormButton" class="btn btn-blue">+ Tambah</button>
-            <table>
+            <button id="addButton" class="btn btn-blue">+ Tambah</button>
+            <table id="dataTable" class="display">
                 <thead>
                     <tr>
                     <th>No</th>
@@ -122,25 +140,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>1302223127 / 123342234</td>
-                        <td>Fauzein Mulya Warman</td>
-                        <td>Villy</td>
-                        <td>Direktorat PuTI Tel-U</td>
-                        <td>Nonaktif</td>
-                        <td>
-                            <button class="btn btn-blue">
-                                <img src="/assets/svg/ic-edit.svg" alt="Aktif / Non-Aktifkan" />
-                            </button>
-                            <button class="btn btn-orange">
-                                <img src="/assets/svg/ic-edit.svg" alt="Edit" />
-                            </button>
-                            <button class="btn btn-red">
-                                <img src="/assets/svg/ic-edit.svg" alt="Hapus" />
-                            </button>
-                        </td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </section>
@@ -148,34 +148,51 @@
         <footer><p>Copyright 2024</p></footer>
     </main>
 
+
     <!-- Form Slide-In -->
-    <div id="formContainer" class="form-container">
+    <div id="formInput" class="form-sidebar">
         <div class="form-content">
-          <h2>Tambah Kelompok Bimbingan</h2>
-          <label for="siswa">Pilih Siswa</label>
-          <select id="siswa">
-            <option value="">Select...</option>
-            <!-- Options siswa -->
-          </select>
-  
-          <label for="pembimbing">Pilih Pembimbing</label>
-          <select id="pembimbing">
-            <option value="">Select...</option>
-            <!-- Options pembimbing -->
-          </select>
-  
-          <label for="perusahaan">Pilih Perusahaan</label>
-          <select id="perusahaan">
-            <option value="">Select...</option>
-            <!-- Options perusahaan -->
-          </select>
-  
-          <button class="btn btn-blue width-100">Tambahkan</button>
-          <button id="closeFormButton" class="btn btn-white width-100">Tutup</button>
+            <h2 id="formTitle">Form Kelompok Bimbingan</h2>
+            <label for="siswa">Pilih Siswa</label>
+            <select id="siswa">
+                <option value="">Select...</option>
+                <!-- Options siswa -->
+            </select>
+
+            <label for="pembimbing">Pilih Pembimbing</label>
+            <select id="pembimbing">
+                <option value="">Select...</option>
+                <!-- Options pembimbing -->
+            </select>
+
+            <label for="perusahaan">Pilih Perusahaan</label>
+            <select id="perusahaan">
+                <option value="">Select...</option>
+                <!-- Options perusahaan -->
+            </select>
+
+            <button class="btn btn-blue width-100">Tambahkan</button>
+            <button id="closeFormButton" class="btn btn-white width-100">Tutup</button>
         </div>
-      </div>
     </div>
 
+    <div class="modal">
+        <div class="modal-card">
+            <div class="modal-title">
+                <img src="../assets/svg/ic-peringatan.svg" alt="Pengaturan" style="align-items: center;"/>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-content">
+                <p>Apakah anda yakin ingin menghapus Kelompok bimbingan ini?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn danger close">Ya</button>
+                <button class="btn btn-white close">Tidak</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/js/kelompok-bimbingan.js"></script>
 </body>
 </html>

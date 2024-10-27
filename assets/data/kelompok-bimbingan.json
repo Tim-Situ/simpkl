@@ -1,0 +1,92 @@
+{
+    "dataKelompokBimbingan": [
+        {
+            "nis": "1302223127",
+            "nisn": "123456789",
+            "nama": "Fauzein Mulya Warman",
+            "pembimbing": "VILLY SATRIA PRADITHA, S.T., M.Kom.",
+            "perusahaan": "Direktorat PuTI Tel-U",
+            "status": true
+        },
+        {
+            "nis": "1302223128",
+            "nisn": "123456790",
+            "nama": "Nadia Siti Aisyah",
+            "pembimbing": "AHMAD ZULFAHMI, S.T.",
+            "perusahaan": "Telkom Research Institute",
+            "status": true
+        },
+        {
+            "nis": "1302223129",
+            "nisn": "123456791",
+            "nama": "Budi Santoso",
+            "pembimbing": "SITI NURHALIZA, M.T.",
+            "perusahaan": "PT. Indosat Ooredoo",
+            "status": false
+        },
+        {
+            "nis": "1302223130",
+            "nisn": "123456792",
+            "nama": "Dewi Lestari",
+            "pembimbing": "RIZKY FAHMI, S.Kom.",
+            "perusahaan": "PT. Telkomsel",
+            "status": true
+        },
+        {
+            "nis": "1302223131",
+            "nisn": "123456793",
+            "nama": "Hendra Prabowo",
+            "pembimbing": "LINA APRILIA, S.T.",
+            "perusahaan": "Telkom University",
+            "status": false
+        },
+        {
+            "nis": "1302223132",
+            "nisn": "123456794",
+            "nama": "Sari Melati",
+            "pembimbing": "FIRMAN ABDUL, M.Kom.",
+            "perusahaan": "PT. XL Axiata Tbk.",
+            "status": true
+        },
+        {
+            "nis": "1302223133",
+            "nisn": "123456795",
+            "nama": "Rudi Hartono",
+            "pembimbing": "RINA WIDYASTUTI, S.T.",
+            "perusahaan": "PT. Smartfren Telecom",
+            "status": true
+        },
+        {
+            "nis": "1302223134",
+            "nisn": "123456796",
+            "nama": "Siti Aminah",
+            "pembimbing": "DEDI MARDIANSYAH, M.T.",
+            "perusahaan": "Telkom Group",
+            "status": false
+        },
+        {
+            "nis": "1302223135",
+            "nisn": "123456797",
+            "nama": "Arif Rahman",
+            "pembimbing": "TANIA RIZKI, S.Kom.",
+            "perusahaan": "PT. Aplikasi Karya Anak Bangsa",
+            "status": true
+        },
+        {
+            "nis": "1302223136",
+            "nisn": "123456798",
+            "nama": "Karin Juwita",
+            "pembimbing": "EKO PRADANA, S.T.",
+            "perusahaan": "PT. Link Net Tbk.",
+            "status": true
+        },
+        {
+            "nis": "1302223634",
+            "nisn": "123456798",
+            "nama": "Ini Siapa ya?",
+            "pembimbing": "Ucup Ganteng",
+            "perusahaan": "PT. Link Net Tbk.",
+            "status": true
+        }
+    ]
+}
