@@ -175,7 +175,8 @@ td {
 }
 
 .btn {
-  padding: 8px 12px;
+  font-size: 16px;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -186,8 +187,18 @@ td {
   color: white;
 }
 
-.btn.edit {
+.btn.warning {
   background-color: #dc9f39;
+  color: white;
+}
+
+.btn.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.danger {
+  background-color: #dc3545;
   color: white;
 }
 
@@ -206,11 +217,14 @@ td {
   color: white;
 }
 
-select {
+select,
+textarea,
+input {
   padding: 10px;
   border-radius: 10px;
   background-color: #f9fafb;
   border: 2px solid #dddddd;
+  font-size: 16px;
 }
 
 footer {
@@ -218,4 +232,47 @@ footer {
   padding: 10px;
   background-color: #fff;
   width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-card {
+  background-color: #fff;
+  margin: 10% auto;
+  border: 1px solid #eeeeee;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal table {
+  box-shadow: none;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 10px;
 }
