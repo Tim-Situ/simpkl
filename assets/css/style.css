@@ -4,17 +4,12 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-}
-
-.table {
-  border-radius: 10px;
-  box-shadow: #333;
 }
 
 body {
+  background-color: #ffffff;
   display: flex;
   min-height: 100vh;
   flex-wrap: wrap;
@@ -58,6 +53,10 @@ aside {
 .menu hr {
   border: none;
   border-top: 1px solid #dddddd;
+}
+
+.menu .active {
+  color: #2c55d3;
 }
 
 main {
@@ -105,7 +104,18 @@ main {
 }
 
 .content {
+  color: #5f5f5f;
   padding: 25px;
+}
+
+.content h1 {
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.content p {
+  margin-bottom: 20px;
 }
 
 .hero {
@@ -145,13 +155,23 @@ table {
   border-collapse: collapse;
   margin-top: 20px;
   background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+th {
+  color: #000;
+  background-color: #f9fafb;
+}
+
+td {
+  border-top: 1px solid #f9fafb;
 }
 
 th,
 td {
   padding: 12px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
 }
 
 .btn {
@@ -161,8 +181,13 @@ td {
   cursor: pointer;
 }
 
-.lihat {
+.btn.lihat {
   background-color: #007bff;
+  color: white;
+}
+
+.btn.edit {
+  background-color: #dc9f39;
   color: white;
 }
 
@@ -181,63 +206,16 @@ td {
   color: white;
 }
 
+select {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  border: 2px solid #dddddd;
+}
+
 footer {
   text-align: center;
   padding: 10px;
   background-color: #fff;
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    min-height: auto;
-    border-right: none;
-  }
-
-  .content {
-    padding: 10px;
-  }
-
-  table {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header .user {
-    margin-bottom: 10px;
-  }
-
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-    width: 100%;
-  }
-
-  tr {
-    margin-bottom: 10px;
-  }
-
-  td {
-    text-align: right;
-    position: relative;
-    padding-left: 50%;
-  }
-
-  td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    font-weight: bold;
-  }
 }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRAKERAN</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <aside>
+      <div class="logo">
+        <img src="/assets/images/simpkl-logo.png" alt="Logo SIMPKL" />
+      </div>
+      <nav>
+        <ul class="menu">
+          <a href="/">
+            <li>
+              <img src="/assets/svg/home.svg" alt="Dashboard" />
+              <span>Dashboard</span>
+            </li>
+          </a>
+          <hr />
+          <li>
+            <span>Admin Sekolah</span>
+          </li>
+          <a href="/pembimbing/jurnal-harian.html">
+            <li>
+              <img src="/assets/svg/daily-journal.svg" alt="Jurnal Harian" />
+              <span>Jurnal Harian</span>
+            </li>
+          </a>
+          <a href="/pembimbing/kehadiran.html">
+            <li>
+              <img src="/assets/svg/presence.svg" alt="Kehadiran" />
+              <span>Kehadiran</span>
+            </li>
+          </a>
+          <a href="/pembimbing/penilaian-akhir.html">
+            <li>
+              <img
+                src="/assets/svg/final-grade-active.svg"
+                alt="Penilaian Akhir"
+              />
+              <span class="active">Penilaian Akhir</span>
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <header class="header">
+        <div class="user">
+          <button class="btn-none">
+            <img
+              class="darkmode-toggle"
+              src="/assets/svg/ic-dark_mode.svg"
+              alt="Toggle dark mode"
+            />
+          </button>
+          <button class="btn-none">
+            <img
+              class="profile-pict"
+              src="/assets/images/profile-pict.png"
+              alt="Avatar User"
+            />
+            <span class="profile-name">Muhammad Haulul Azkiyaa</span>
+            <img
+              class="dropdown-icon"
+              src="/assets/svg/ic-dropdown.svg"
+              alt="Profile menu"
+            />
+          </button>
+        </div>
+      </header>
+
+      <section class="content">
+        <h1>Penilaian Akhir</h1>
+        <p>
+          Anda dapat memberikan nilai akhir kepada siswa bimbingan Anda.
+          Silahkan klik icon pensil untuk melakukan input nilai pada setiap
+          siswa.
+        </p>
+
+        <select name="select-month" id="select-month">
+          <option value="Januari">Januari</option>
+          <option value="Februari">Februari</option>
+          <option value="Maret">Maret</option>
+          <option value="April">April</option>
+          <option value="Mei">Mei</option>
+          <option value="Juni">Juni</option>
+          <option value="Juli">Juli</option>
+          <option value="Agustus">Agustus</option>
+          <option value="September">September</option>
+          <option value="Oktober">Oktober</option>
+          <option value="November">November</option>
+          <option value="Desember">Desember</option>
+        </select>
+
+        <select name="select-year" id="select-year">
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>NIS / NISN</th>
+              <th>Nama</th>
+              <th>Perusahaan</th>
+              <th>Penilaian Akhir</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>1302220011 / 004371035</td>
+              <td>Muhammad Haulul Azkiyaa</td>
+              <td>Telkom Indonesia</td>
+              <td>
+                <button class="btn edit">
+                  <img src="/assets/svg/ic-edit.svg" alt="Edit" />
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer><p>Copyright 2024</p></footer>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
