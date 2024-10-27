@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRAKERAN</title>
+    <link rel="stylesheet" href="../assets/css/submitKehadiran.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="/assets/js/jquery-3.7.1.min.js"></script>
   </head>
@@ -34,24 +35,23 @@
             </a>
             <a href="/pembimbing/kehadiran.html">
               <li>
-                <img src="/assets/svg/presence.svg" alt="Kehadiran" />
-                <span>Kehadiran</span>
+                <img src="/assets/svg/presence-active.svg" alt="Kehadiran" />
+                <span class="active">Kehadiran</span>
               </li>
             </a>
             <a href="/pembimbing/penilaian-akhir.html">
               <li>
                 <img
-                  src="/assets/svg/final-grade-active.svg"
+                  src="/assets/svg/final-grade.svg"
                   alt="Penilaian Akhir"
                 />
-                <span class="active">Penilaian Akhir</span>
+                <span>Penilaian Akhir</span>
               </li>
             </a>
           </ul>
         </nav>
       </div>
     </aside>
-
     <main>
       <header>
         <div class="menu-toggle">
@@ -86,69 +86,38 @@
       </header>
 
       <section class="content">
-        <h1>Penilaian Akhir</h1>
-        <p>
-          Anda dapat memberikan nilai akhir kepada siswa bimbingan Anda.
-          Silahkan klik icon pensil untuk melakukan input nilai pada setiap
-          siswa.
-        </p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>No</th>
-              <th>NIS / NISN</th>
-              <th>Nama</th>
-              <th>Perusahaan</th>
-              <th>Penilaian Akhir</th>
-            </tr>
-          </thead>
-          <tbody id="data-siswa">
-            <tr>
-              <td colspan="5">Tidak ada data</td>
-            </tr>
-          </tbody>
-        </table>
+        <h1>Pemberitahuan</h3>
+          <p>Anda dapat melihat jurnal harian yang sudah dibuat oleh siswa bimbingan Anda, dan memberikan komentar. Jika data belum ada, hubungi siswa bimbingan Anda. Bimbingan.</p>
+          <div class="container">
+            <div class="pilihTanggal">
+              <p>Pilih Tanggal</p>
+              <input type="date" name="inputdate" id="inputdate">
+            </div>
+            <div class="btnSubmit">
+              <button>submit presentasi</button>
+            </div>
+          </div>
+          <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>NIS/NISN</th>
+                    <th>Nama</th>
+                    <th>Hadir</th>
+                    <th>Izin</th>
+                    <th>Sakit</th>
+                    <th>Alfa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan ditambahkan oleh JavaScript -->
+            </tbody>
       </section>
 
       <footer><p>Copyright 2024</p></footer>
     </main>
-
-    <div class="modal">
-      <div class="modal-card">
-        <div class="modal-title">
-          <h2>Penilaian Akhir</h2>
-          <span class="close">&times;</span>
-        </div>
-        <div class="modal-content">
-          <form action="">
-            <table>
-              <thead>
-                <tr>
-                  <th>No</th>
-                  <th>Aspek Penilaian</th>
-                  <th>Sub Aspek Penilaian</th>
-                  <th>Skor (1-100)</th>
-                  <th>Deskripsi Penilaian</th>
-                </tr>
-              </thead>
-              <tbody id="nilai-siswa">
-                <tr>
-                  <td colspan="5">Tidak ada data</td>
-                </tr>
-              </tbody>
-            </table>
-          </form>
-        </div>
-
-        <div class="modal-footer">
-          <button class="btn danger close">Batal</button>
-          <button class="btn primary">Simpan</button>
-        </div>
-      </div>
-    </div>
-
-    <script src="/assets/js/penilaian-akhir.js"></script>
-    <script src="/assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script type="module" src="../assets/js/kehadiran.js"></script>
+    <script src="../assets/data/datakehadiran.json"></script>
   </body>
 </html>
