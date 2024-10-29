@@ -8,11 +8,17 @@ $(document).ready(function () {
       row.append("<td>" + (index + 1) + "</td>");
       row.append("<td>" + student.nama + "</td>");
       row.append("<td>" + student.perusahaan + "</td>");
-      row.append('<td><button class="btn jurnal-harian"><img src="assets/svg/eye-fill.svg" alt=""></button></td>');
-      row.append('<td><button class="btn status-green">&#10004;</button><button class="btn status-red">&#10008;</button></td>')
-      row.append('<td><button class="btn catatan-anda"><img src="assets/svg/chat-fill.svg" alt=""></button></td>');
+      row.append('<td><button class="btn btn-orange"><img src="../assets/svg/eye-fill.svg" alt=""></button></td>');
+      row.append('<td><button id="btnSetuju" class="btn btn-green">&#10004;</button><button id="btnTolak" class="btn btn-red">&#10008;</button></td>')
+      row.append('<td><button id="btnCatatan" class="btn btn-orange"><img src="../assets/svg/chat-fill.svg" alt=""></button></td>');
       tableBody.append(row);
     });
   });
+
+  $(document).on('click', '#btnCatatan', function() {
+    $(".modal").css("display", "block"); 
+  });
 }
 )
+
+

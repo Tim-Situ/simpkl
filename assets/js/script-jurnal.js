@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const approveButton = document.querySelector(".status.green");
-    const rejectButton = document.querySelector(".status.red");
+    const approveButton = document.querySelector("#btnSetuju");
+    const rejectButton = document.querySelector("#btnTolak");
   
     approveButton.addEventListener("click", function() {
       approveButton.textContent = "Disetujui";
