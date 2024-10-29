@@ -8,11 +8,6 @@
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Include DataTables CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-    <!-- Include DataTables JS -->
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
     <!-- sidebar -->
@@ -38,8 +33,8 @@
                     </li>
                     <a href="./pengaturan.html">
                         <li>
-                            <img src="../assets/svg/ic-setting.svg" alt="Pengaturan" />
-                            <span>Pengaturan</span>
+                            <img src="../assets/svg/ic-setting-active.svg" alt="Pengaturan" />
+                            <span class="active">Pengaturan</span>
                         </li>
                     </a>
                     <a href="./jurusan.html">
@@ -68,8 +63,8 @@
                     </a>
                     <a href="./kelompok-bimbingan.html">
                         <li>
-                            <img src="../assets/svg/ic-kelompok-bimbingan-active.svg" alt="Kelompok Bimbingan" />
-                            <span class="active">Kelompok Bimbingan</span>
+                            <img src="../assets/svg/ic-kelompok-bimbingan.svg" alt="Kelompok Bimbingan" />
+                            <span>Kelompok Bimbingan</span>
                         </li>
                     </a>
                     <a href="./indikator-penilaian.html">
@@ -121,25 +116,39 @@
         </header>
 
         <section class="content">
-            <h1>Kelompok Bimbingan</h1>
+            <h1>Pengaturan</h1>
+            <h3>Tahun Ajaran</h3>
             <p>
-                Anda dapat melihat data Kelompok Bimbingan berdasarkan tahun ajaran yang sedang aktif, menambahkan, mengubah data dan status aktif, serta menghapus data Kelompok Bimbingan.
+                Anda dapat mengubah tahun ajaran berjalan melalui pengaturan ini. Data pada aplikasi akan ditampilkan sesuai tahun yang anda pilih.
             </p>
             <button id="addButton" class="btn btn-blue">+ Tambah</button>
-            <table id="dataTable" class="display">
+            <table>
                 <thead>
                     <tr>
-                    <th>No</th>
-                    <th>NIS / NISN</th>
-                    <th>Nama Siswa</th>
-                    <th>Guru Pembimbing</th>
-                    <th>Perusahaan</th>
-                    <th>Status</th>
-                    <th>Aksi</th>
+                        <th>Tahun Ajaran</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    <tr>
+                        <td>2425-1</td>
+                        <td>Aktif</td>
+                        <td>
+                            <button class="btn btn-red">
+                                <img src="/assets/svg/ic-power.svg" alt="Aktif / Non-Aktifkan" />
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2324-2</td>
+                        <td>Nonaktif</td>
+                        <td>
+                            <button class="btn btn-green">
+                                <img src="/assets/svg/ic-power.svg" alt="Aktif / Non-Aktifkan" />
+                            </button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </section>
@@ -147,51 +156,6 @@
         <footer><p>Copyright 2024</p></footer>
     </main>
 
-
-    <!-- Form Slide-In -->
-    <div id="formInput" class="form-sidebar">
-        <div class="form-content">
-            <h2 id="formTitle">Form Kelompok Bimbingan</h2>
-            <label for="siswa">Pilih Siswa</label>
-            <select id="siswa">
-                <option value="">Select...</option>
-                <!-- Options siswa -->
-            </select>
-
-            <label for="pembimbing">Pilih Pembimbing</label>
-            <select id="pembimbing">
-                <option value="">Select...</option>
-                <!-- Options pembimbing -->
-            </select>
-
-            <label for="perusahaan">Pilih Perusahaan</label>
-            <select id="perusahaan">
-                <option value="">Select...</option>
-                <!-- Options perusahaan -->
-            </select>
-
-            <button class="btn btn-blue width-100">Tambahkan</button>
-            <button id="closeFormButton" class="btn btn-white width-100">Tutup</button>
-        </div>
-    </div>
-
-    <div class="modal">
-        <div class="modal-card">
-            <div class="modal-title">
-                <img src="../assets/svg/ic-peringatan.svg" alt="Pengaturan" style="align-items: center;"/>
-                <span class="close">&times;</span>
-            </div>
-            <div class="modal-content">
-                <p>Apakah anda yakin ingin menghapus Kelompok bimbingan ini?</p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn danger close">Ya</button>
-                <button class="btn btn-white close">Tidak</button>
-            </div>
-        </div>
-    </div>
-
     <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/kelompok-bimbingan.js"></script>
 </body>
 </html>

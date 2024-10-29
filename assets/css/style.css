@@ -208,6 +208,10 @@ td {
   background-color: #be2a1e;
 }
 
+.btn-green {
+  background-color: #376A50;
+}
+
 .btn.primary {
   background-color: #007bff;
   color: white;
