@@ -16,6 +16,7 @@ $(document).ready(function () {
   });
 
   $(document).on('click', '#btnCatatan', function() {
+    console.log("Tes")
     $(".modal").css("display", "block"); 
   });
 }
