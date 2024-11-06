@@ -199,6 +199,11 @@ td {
   color: white;
 }
 
+.btn-green {
+  background-color: #28a745;
+  color: white;
+}
+
 .btn-orange {
   background-color: #dc9f39;
   color: white;

@@ -1,55 +1,47 @@
 .modal {
   display: none;
   position: fixed;
-  top: 50%; 
-  left: 50%;   
-  display: flex; 
-  justify-content: center; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-card {
+  background-color: #fff;
+  margin: 10% auto;
+  border: 1px solid #eeeeee;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px;
 }
 
 .modal-content {
-  background-color: white; 
   padding: 20px;
-  width: 400px; 
-  border-radius: 5px; 
-  position: relative; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  overflow-x: auto;
 }
 
-#noteInput {
-  width: 100%; 
-  resize: none; 
+.modal table {
+  box-shadow: none;
 }
 
-.btn.save {
-  align-self: flex-end;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  border-top: 1px solid #eeeeee;
+  gap: 10px;
 }
-
-.close {
-  position: absolute; 
-  top: 10px; 
-  right: 10px;
-  cursor: pointer; 
-  font-size: 24px;
-}
-
-
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 24px;
-}
-
 * {
   margin: 0;
   padding: 0;

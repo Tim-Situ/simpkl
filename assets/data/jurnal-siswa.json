@@ -1,0 +1,24 @@
+{
+    "jurnal_siswa": [
+        {
+            "nama": "Muhammad Ghaziveda",
+            "perusahaan": "VasaCompany"
+        },
+        {
+            "nama": "Muhammad Nur Shodiq",
+            "perusahaan": "ShodiqCompany"
+        },
+        {
+            "nama": "Fauzein Mulya Warman",
+            "perusahaan": "FauzeinCompany"
+        },
+        {
+            "nama": "Muhammad Haulul Azkiyaa",
+            "perusahaan": "HaululCompany"
+        },
+        {
+            "nama": "Nabil Fazlur Rahman",
+            "perusahaan": "FazlurCompany"
+        }
+    ]
+}

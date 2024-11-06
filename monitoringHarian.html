@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="assets/css/monitoringHarian.css">
 </head>
 <body>
-  <script src="assets/js/status-jurnal"></script>
   <div class="container">
     <div class="sidebar">
       <div class="logo">
@@ -75,17 +74,11 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="table">
-              <td>1</td>
-              <td>Muhammad Ghaziveda Belvanaufal</td>
-              <td>VasaCompany</td>
-              <td><button class="btn lihat">Lihat</button></td>
-              <td>
-                <button class="btn status green">&#10004;</button>
-                <button class="btn status red">&#10008;</button>
-              </td>
-              <td><button class="btn lihat"  id="noteButton">Lihat</button></td>
-            </tr>
+            <tbody id="jurnal-siswa">
+              <tr>
+                <td colspan="6">Tidak ada data</td>
+              </tr>
+            </tbody>
           </tbody>
         </table>
       </main>
@@ -96,14 +89,24 @@
     <p>SiMPKL | Hak Cipta &copy; 2024</p>
   </footer>
 
-  <!-- <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Masukkan Catatan Anda</h2>
-      <textarea id="noteInput" rows="5" placeholder="Tulis catatan di sini..."></textarea>
-      <button id="saveNote" class="btn save">Simpan</button>
+  <div class="modal">
+    <div class="modal-card">
+      <div class="modal-title">
+        <h2>Berikan Catatan</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-content">
+        <textarea rows="5" placeholder="Masukkan catatan Anda disini..." style="width: 100%;"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn danger close">Batal</button>
+        <button class="btn primary">Simpan Catatan</button>
+      </div>
     </div>
-  </div> -->
-  
+  </div>
+
+  <script src="../assets/js/script-jurnal.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/jurnal-harian.js"></script>
 </body>
 </html>
