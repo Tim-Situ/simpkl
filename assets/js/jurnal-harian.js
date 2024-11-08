@@ -28,18 +28,15 @@ $(document).ready(function () {
   });
 
   $(document).on('click', '#btnJurnal', function() {
-    console.log("Tes")
     $("#jurnalSiswa").css("display", "block"); 
   });
 
   $(document).on('click', '#btnCatatan', function() {
-    console.log("Tes")
     activeRow = $(this).closest('tr');
     $("#catatanGuru").css("display", "block"); 
   });
 
   $('#jurnalSiswa').on('click', '.btn.primary', function() {
-    alert("Jurnal berhasil disimpan!");
     $('#jurnalSiswa').css("display", "none");
   });
 
