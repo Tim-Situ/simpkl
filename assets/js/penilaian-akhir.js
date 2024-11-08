@@ -39,7 +39,9 @@ $(document).ready(function () {
                   "' /></td>"
               );
               row.append(
-                "<td><textarea>" + subAspek.deskripsi + "</textarea></td>"
+                "<td><textarea>" +
+                  (subAspek.deskripsi || "Belum ada deskripsi") +
+                  "</textarea></td>"
               );
               tableBody.append(row);
             });

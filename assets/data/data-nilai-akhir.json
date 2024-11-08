@@ -10,11 +10,6 @@
               "nama": "Pengetahuan Umum",
               "nilai": 80,
               "deskripsi": "Nilai pengetahuan umum yang diperoleh siswa adalah 80. Nilai ini menunjukkan bahwa siswa memiliki pengetahuan umum yang cukup baik."
-            },
-            {
-              "nama": "Pengetahuan Khusus",
-              "nilai": 90,
-              "deskripsi": "Nilai pengetahuan umum yang diperoleh siswa adalah 80. Nilai ini menunjukkan bahwa siswa memiliki pengetahuan umum yang cukup baik."
             }
           ]
         },
@@ -25,11 +20,6 @@
               "nama": "Keterampilan Umum",
               "nilai": 85,
               "deskripsi": "Nilai pengetahuan umum yang diperoleh siswa adalah 80. Nilai ini menunjukkan bahwa siswa memiliki pengetahuan umum yang cukup baik."
-            },
-            {
-              "nama": "Keterampilan Khusus",
-              "nilai": 95,
-              "deskripsi": "Nilai pengetahuan umum yang diperoleh siswa adalah 80. Nilai ini menunjukkan bahwa siswa memiliki pengetahuan umum yang cukup baik."
             }
           ]
         },
@@ -39,11 +29,6 @@
             {
               "nama": "Sikap Umum",
               "nilai": 90,
-              "deskripsi": "Nilai pengetahuan umum yang diperoleh siswa adalah 80. Nilai ini menunjukkan bahwa siswa memiliki pengetahuan umum yang cukup baik."
-            },
-            {
-              "nama": "Sikap Khusus",
-              "nilai": 100,
               "deskripsi": "Nilai pengetahuan umum yang diperoleh siswa adalah 80. Nilai ini menunjukkan bahwa siswa memiliki pengetahuan umum yang cukup baik."
             }
           ]
@@ -59,10 +44,6 @@
             {
               "nama": "Pengetahuan Umum",
               "nilai": 85
-            },
-            {
-              "nama": "Pengetahuan Khusus",
-              "nilai": 95
             }
           ]
         },
@@ -72,10 +53,6 @@
             {
               "nama": "Keterampilan Umum",
               "nilai": 90
-            },
-            {
-              "nama": "Keterampilan Khusus",
-              "nilai": 100
             }
           ]
         },
@@ -85,10 +62,6 @@
             {
               "nama": "Sikap Umum",
               "nilai": 95
-            },
-            {
-              "nama": "Sikap Khusus",
-              "nilai": 105
             }
           ]
         }
